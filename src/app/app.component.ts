@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'New Tour of Heroes';
+  public singleModel = '1';
 }

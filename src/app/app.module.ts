@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+// play with ngx-bootstrap
+import { AlertModule, ButtonsModule } from 'ngx-bootstrap';
+
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -31,6 +34,8 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     AppRoutingModule,
     HttpModule,
+    AlertModule.forRoot(),
+    ButtonsModule.forRoot(),
     InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   providers: [HeroService],
